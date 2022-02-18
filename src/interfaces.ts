@@ -258,7 +258,7 @@ export interface ILogObject extends IStackFrame {
   /**  Log level ID (e.g. 3) */
   logLevelId: TLogLevelId;
   /**  Log arguments */
-  argumentsArray: (IErrorObject | unknown)[];
+  argumentsArray: Array<IErrorObject | unknown>;
   /**  Optional Log stack trace */
   stack?: IStackFrame[];
   /** Convert a LogObject into a JSON, is used by JSON.stringify() */
